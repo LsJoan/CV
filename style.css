@@ -476,11 +476,9 @@ button {
 
 @media screen and (max-width: 900px) {
     .work-item {
-        width: 250px;
-        margin: 20px;
+        width: 35%;
+        margin: 5px;
         margin-left: 32px;
-        transition: width 2s;
-        transition: margin 2s;
     }
     .profile {
         min-width: 260px;
@@ -499,9 +497,18 @@ button {
         overflow: auto;
     }
     .menu {
+        width: 260px;
         flex-direction: row;
         position: fixed;
         top: 0;
+        left: 18%;
+        right: 18%;
+        margin: auto;
+    }
+    .menu-item {
+        width: 68px;
+        height: 56px;
+        font-size: 0.7rem;
     }
     .profile {
         width: 450px;
@@ -519,7 +526,7 @@ button {
         max-height: 1000vh;
     }
     .work-item {
-        width: 228px;
+        width: 40%;
         margin: 15px;
         transition: width 2s;
         transition: margin 2s;
@@ -542,8 +549,8 @@ button {
         max-height: 1000vh;
     }
     .work-item {
-        width: 200px;
-        margin: 10px;
+        width: 40%;
+        margin: 15px;
         transition: width 2s;
         transition: margin 2s;
     }
@@ -555,7 +562,7 @@ button {
         transition: min-height 2s;
     }
     .work-item {
-        width: 150px;
+        width: 40%;
         margin: 10px;
         transition: width 2s;
         transition: margin 2s;
@@ -576,8 +583,61 @@ button {
         font-size: 0.7rem;
     }
     .work-item {
-        width: 210px;
+        width: 40%;
         margin: 15px;
+        transition: width 2s;
+        transition: margin 2s;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        background: #000;
+    }
+    .menu {
+        width: 200px;
+    }
+    .menu-item {
+        font-size: 0.5rem;
+        height: 40px;
+    }
+    .title {
+        font-size: 1.2rem
+    }
+    .main {
+        margin: 0px;
+        font-size: 0.6rem;
+    }
+    .section-item {
+        padding: 14px;
+        padding-left: 12px;
+    }
+    .domain-item {
+        width: 90%;
+        transition: width 2s;
+    }
+    .section-item ul {
+        margin-top: 2px;
+    }
+    .section-item li {
+        margin-top: 10px;
+        margin-left: 38px;
+    }
+    .section-item .title {
+        font-size: 0.9rem;
+    }
+    .work-item {
+        width: 40%;
+        margin: 8px;
+        transition: width 2s;
+        transition: margin 2s;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .work-item {
+        width: 40%;
+        margin: 5px;
         transition: width 2s;
         transition: margin 2s;
     }

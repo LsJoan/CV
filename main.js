@@ -36,28 +36,28 @@ menuWorks.addEventListener("click", () => {
     menuWorks.className = "menu-item active";
 });
 
-sectionAbout.addEventListener("mouseenter", () => {
+sectionAbout.addEventListener("mousemove", () => {
     menuAbout.className = "menu-item active";
     menuSkills.className = "menu-item";
     menuResume.className = "menu-item";
     menuWorks.className = "menu-item";
 });
 
-sectionSkills.addEventListener("mouseenter", () => {
+sectionSkills.addEventListener("mousemove", () => {
     menuAbout.className = "menu-item";
     menuSkills.className = "menu-item active";
     menuResume.className = "menu-item";
     menuWorks.className = "menu-item";
 });
 
-sectionResume.addEventListener("mouseenter", () => {
+sectionResume.addEventListener("mousemove", () => {
     menuAbout.className = "menu-item";
     menuSkills.className = "menu-item";
     menuResume.className = "menu-item active";
     menuWorks.className = "menu-item";
 });
 
-sectionWork.addEventListener("mouseenter", () => {
+sectionWork.addEventListener("mousemove", () => {
     menuAbout.className = "menu-item";
     menuSkills.className = "menu-item";
     menuResume.className = "menu-item";
