@@ -8,6 +8,10 @@ let sectionAbout = document.getElementById("about-section"),
     sectionResume = document.getElementById("resume-section"),
     sectionWork = document.getElementById("work-section");
 
+
+const download = document.getElementById("download-cv");
+const contact = document.getElementById("contact-me");
+    
 menuAbout.addEventListener("click", () => {
     menuAbout.className = "menu-item active";
     menuSkills.className = "menu-item";
@@ -62,4 +66,12 @@ sectionWork.addEventListener("mousemove", () => {
     menuSkills.className = "menu-item";
     menuResume.className = "menu-item";
     menuWorks.className = "menu-item active";
+});
+
+contact.addEventListener("click", () => {
+    console.log("si");
+});
+
+download.addEventListener("click", () => {
+    console.log("si");
 });

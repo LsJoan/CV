@@ -1,0 +1,208 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(180deg, #55c972, #477493 10%, #477493 90%, #55c972);
+}
+.centrar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main {
+    background-image: url(./img/bender.png);
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 33vw;
+    z-index: -1;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-ojos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30.3vw;
+    height: 10.0vw;
+    margin-top: 6.55vw;
+    border-radius: 8vw;
+    overflow: hidden;
+}
+
+.slider-cejas1,
+.slider-cejas2 {
+    width: 100%;
+    height: 13vw;
+    display: block;
+    position: relative;
+    background: #000;
+    top: 0;
+    left: 2.55vw;
+    animation: cejass 60s linear infinite normal;
+}
+
+.slider-cejas1 {
+    left: 2.6vw;
+    transform: rotate(10deg);
+}
+
+.slider-cejas2 {
+    left: 2vw;
+    transform: rotate(350deg);
+}
+
+@keyframes cejass {
+    6% {
+        top: -9vw;
+    }
+    12.5% {
+        top: -9vw;
+    }
+    17.5% {
+        top: 0vw;
+    }
+    to {
+        top: vw;
+    }
+}
+
+@keyframes cejasActiva {
+    6% {
+        top: -9vw;
+    }
+    to {
+        top: -9vw;
+    }
+}
+
+@media screen and (max-width: 442px) {
+    .slider-ojos {
+        margin-top: 6.45vw;
+    }
+    .slider-cejas1 {
+        left: 2.8vw;
+    }
+    .slider-cejas2 {
+        left: 1.8vw;
+    }
+}
+
+.slider-pupila1,
+.slider-pupila2 {
+    width: 6.5vw;
+    height: 2.8vw;
+    background: #000;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    top: 0vw;
+    animation: ojo0 60s linear infinite alternate;
+}
+
+.slider-pupila1 {
+    left: -16.8vw;
+}
+
+.slider-pupila2 {
+    left: -8vw;
+}
+
+@keyframes ojo0 {
+    7% {
+        top: 0vw;
+    }
+    7.2% {
+        top: 3.5vw;
+    }
+    12% {
+        top: 3.5vw;
+    }
+    12.1% {
+        top: 0vw;
+    }
+    12.5% {
+        top: 0vw;
+    }
+    15.5% {
+        top: 3vw;
+    }
+    17.5% {
+        top: 3vw;
+    }
+    20% {
+        top: 0vw;
+    }
+    to {
+        top: 0vw;
+    }
+}
+
+@keyframes name {
+    0% {
+        opacity: 0;
+        font-size: 0.01vw;
+    }
+    17.5% {
+        opacity: 0;
+        font-size: 0.01vw;
+    }
+    20% {
+        opacity: 1;
+        font-size: 5vw;
+        -webkit-text-stroke: 0.2vw aqua;
+    }
+    96% {
+        opacity: 1;
+        font-size: 5vw;
+        -webkit-text-stroke: 0.2vw aqua;
+    }
+    to {
+        opacity: 0;
+        font-size: 0.01vw;
+        -webkit-text-stroke: 0.2vw aqua;
+    }
+}
+
+.humo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.humo img {
+    width: 7vw;
+    height: 15vw;
+    position: relative;
+    top: -4vw;
+    left: 16vw;
+    animation: humo 10s linear infinite normal;
+}
+
+@keyframes humo {
+    90% {
+        top: -20vw;
+        opacity: 0.1;
+        width: 0.01vw;
+        height: 0.01vw;
+    }
+    to {
+        top: -20vw;
+        opacity: 0.1;
+        width: 0.01vw;
+        height: 0.01vw;
+    }
+}

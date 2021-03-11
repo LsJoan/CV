@@ -591,9 +591,6 @@ button {
 }
 
 @media screen and (max-width: 450px) {
-    body {
-        background: #000;
-    }
     .menu {
         width: 200px;
     }
