@@ -6,7 +6,7 @@
 body {
     overflow: hidden;
     height: 100vh;
-    background: linear-gradient(180deg, #55c972, #477493 10%, #477493 90%, #55c972);
+    background: linear-gradient(180deg, #477493, #477493);
 }
 .centrar {
     position: absolute;
