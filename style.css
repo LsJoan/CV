@@ -86,7 +86,7 @@ body {
 
 .img-container {
     position: relative;
-    background: url(./img/profile.jpeg) no-repeat;
+    background: url(./img/profile.jpg) no-repeat;
     background-size: cover;
     min-height: 350px;
     background-position: 0 0 0;
